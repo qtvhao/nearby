@@ -1,0 +1,19 @@
+{
+  "matches": [],
+  "blocks": [],
+  "inbox": [],
+  "liked_messages": [],
+  "lists": [],
+  "goingout": [],
+  "deleted_lists": [],
+  "matchmaker": [],
+  "squads": [],
+  "last_activity_date": "2018-07-19T18:10:37.384Z",
+  "poll_interval": {
+    "standard": 2000,
+    "persistent": 30000
+  },
+  "places": {
+    "has_new": false
+  }
+}
