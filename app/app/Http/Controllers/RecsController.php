@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class RecsController extends Controller
 {
 	public function index(Request$request) {
-
+		return view('recs.index');
     }
 }
