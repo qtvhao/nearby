@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Nearby</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script>
+        angular.module('myApp',[]).controller('myController', function ($http,$scope) {
+            $http.get('https://qtvhao.github.io/nearby/api/v2/recs/core.json').then(function(resp){
+                $scope.recs = resp.data;
+            })
+        });
+    </script>
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myController">
 
 </body>
 </html>
