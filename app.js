@@ -8,13 +8,21 @@ var RecController = function ($http, $scope, RecService) {
             scope.rec = getRandomIndex(scope.recs);
         })
 };
+var RecService = function ($http, ENDPOINTS) {
+    return {
+        all: function () {
+            return $http.get(ENDPOINTS.V2.RECS.ALL);
+        }
+    };
+};
 angular
     .module('myApp', [])
-    .service('RecService', function ($http) {
-        return {
-            all: function () {
-                return $http.get('https://qtvhao.github.io/nearby/api/v2/recs/core.json')
+    .constant('ENDPOINTS', {
+        V2: {
+            RECS: {
+                ALL: 'https://qtvhao.github.io/nearby/api/v2/recs/core.json'
             }
-        };
+        }
     })
+    .service('RecService', RecService)
     .controller('RecController', RecController);
