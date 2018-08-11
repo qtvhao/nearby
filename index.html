@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Nearby</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
@@ -15,7 +16,7 @@
                 <div class="rec">
                     <div class="rec-image-container">
                         <div class="rec-image-wrapper">
-                            <img class="rec-image" src="" style="" ng-src="{{rec.image_url}}" alt="">
+                            <!--<img class="rec-image" src="" style="" ng-src="{{rec.image_url}}" alt="">-->
                         </div>
                         <div class="rec-info-wrapper">
                             <div class="rec-info">
@@ -26,10 +27,11 @@
                     <div class="rec-actions-container">
                         <div class="rec-actions-wrapper">
                             <div class="rec-actions">
-                                <div class="rec-action rec-pass">
+                                {{recsLiked}}
+                                <div class="rec-action rec-pass" ng-click="pass()">
                                     <i class="fas fa-times" style="color:#FE4A6A"></i>
                                 </div>
-                                <div class="rec-action rec-like">
+                                <div class="rec-action rec-like" ng-click="like()">
                                     <i class="fas fa-heart" style="color:#2AE6AE"></i>
                                 </div>
                             </div>
