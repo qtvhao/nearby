@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Storage;
 class RecsController extends Controller
 {
 	public function index(Request$request) {
-		dd(User::all());
-		return view('recs.index');
+		$users = User::all();
+		$rec = $users->random();
+		return view('recs.index', compact('rec'));
     }
 
 	public function seed() {
