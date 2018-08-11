@@ -53,7 +53,7 @@ var RecService = function ($http, ENDPOINTS) {
     };
 };
 angular
-    .module('myApp', [])
+    .module('myApp', ['ngAnimate'])
     .constant('ENDPOINTS', {
         V2: {
             RECS: {

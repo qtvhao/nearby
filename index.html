@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Nearby</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -15,8 +16,8 @@
             <div class="rec-wrapper">
                 <div class="rec">
                     <div class="rec-image-container">
-                        <div class="rec-image-wrapper">
-                            <!--<img class="rec-image" src="" style="" ng-src="{{rec.image_url}}" alt="">-->
+                        <div class="rec-image-wrapper swap-animation-wrapper">
+                            <img ng-animate-swap="rec.image_url" class="rec-image  swap-animation" src="" style="" ng-src="{{rec.image_url}}" alt="" >
                         </div>
                         <div class="rec-info-wrapper">
                             <div class="rec-info">

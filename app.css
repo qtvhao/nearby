@@ -53,3 +53,25 @@
     line-height:60px;
     font-size:32px;
 }
+.swap-animation.ng-enter, .swap-animation.ng-leave {
+    transition:0.2s linear all;
+}
+.swap-animation{
+    border-radius: 7px;
+    position:absolute;
+}
+.swap-animation.ng-enter {
+    right:-377px;
+}
+.swap-animation.ng-enter-active {
+    right:0px;
+}
+.swap-animation.ng-leave {
+    right:0px;
+}
+.swap-animation.ng-leave-active {
+    right:377px;
+}
+.swap-animation-wrapper{
+    overflow:hidden;
+}
