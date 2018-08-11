@@ -4,18 +4,7 @@
     <meta charset="UTF-8">
     <title>Nearby</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
-    <script>
-        var getRandomIndex = function(myArray){
-            return myArray[Math.floor(Math.random() * myArray.length)];
-        };
-        angular.module('myApp',[]).controller('myController', function ($http,$scope) {
-            $http.get('https://qtvhao.github.io/nearby/api/v2/recs/core.json').then(function(resp){
-                var scope = $scope;
-                scope.recs = resp.data;
-                scope.rec = getRandomIndex(scope.recs);
-            })
-        });
-    </script>
+    <script src="app.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
 </head>
