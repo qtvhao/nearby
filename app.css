@@ -15,7 +15,7 @@
     height: 462px;
     overflow: hidden;
     border-radius: 7px;
-    box-shadow: 2px 4px 4px #00000060;
+    box-shadow: 0 2px 4px 4px #00000020;
     display:inline-block;
 }
 
