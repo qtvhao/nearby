@@ -16,6 +16,37 @@
             })
         });
     </script>
+    <style>
+        .rec-image {
+            object-fit: cover;
+            width: 377px;
+            height: 462px;
+        }
+        .rec-image-container{
+            position:relative;
+        }
+        .rec-image-wrapper{
+            width: 377px;
+            height: 462px;
+            overflow: hidden;
+            border-radius: 7px;
+            box-shadow: 2px 4px 4px #00000060;
+            display:inline-block;
+        }
+
+        .rec-info-wrapper {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .rec-info {
+            font-size: 30px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 10px #00000088;
+        }
+    </style>
 </head>
 <body>
     <div ng-app="myApp" ng-controller="myController">
