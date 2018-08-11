@@ -19,7 +19,29 @@
 </head>
 <body>
     <div ng-app="myApp" ng-controller="myController">
-        {{rec}}
+        <div class="rec-container">
+            <div class="rec-wrapper">
+                <div class="rec">
+                    <div class="rec-image-container">
+                        <div class="rec-image-wrapper">
+                            <img class="rec-image" src="" style="" ng-src="{{rec.image_url}}" alt="">
+                        </div>
+                        <div class="rec-info-wrapper">
+                            <div class="rec-info">
+                                {{rec.name}}, {{rec.age}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rec-actions-container">
+                        <div class="rec-actions-wrapper">
+                            <div class="rec-actions">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
