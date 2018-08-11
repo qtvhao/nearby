@@ -6,7 +6,12 @@ var RecController = function ($http, $scope, RecService) {
     scope.fetchRec = function () {
         RecService.all().then(function (resp) {
             scope.recs = resp.data;
-            scope.rec = getRandomIndex(scope.recs);
+            if (scope.recNext) {
+                scope.rec = scope.recNext;
+            } else {
+                scope.rec = getRandomIndex(scope.recs);
+            }
+            scope.recNext = getRandomIndex(scope.recs);
         });
     };
     scope.fetchRec();

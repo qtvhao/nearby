@@ -54,7 +54,7 @@
     font-size:32px;
 }
 .swap-animation.ng-enter, .swap-animation.ng-leave {
-    transition:0.2s linear all;
+    transition:0.5s linear all;
 }
 .swap-animation{
     border-radius: 7px;
